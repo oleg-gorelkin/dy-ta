@@ -1,0 +1,35 @@
+{
+  "name": "dy-ta",
+  "version": "1.0.0",
+  "description": "Dynamic Yield Test Assgniment",
+  "main": "./dist/index.html",
+  "scripts": {
+    "build": "gulp",
+    "prestart": "npm run build",
+    "start": "./node_modules/http-server/bin/http-server ./dist/",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint --ext jsx --ext js ./src"
+  },
+  "author": "Oleg Gorelkin",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.1.0",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "http-server": "^0.11.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "optionalDependencies": {}
+}
